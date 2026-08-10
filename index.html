@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Ahmed & Associates | GST & Income Tax Litigation Experts | Raigarh, CG</title>
+<meta name="description" content="Ahmed & Associates – Premier GST & Income Tax Litigation firm in Raigarh, Chhattisgarh. Led by CMA Syed Sanan."/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+:root{
+  --navy:#0c1a2e;--navy2:#152540;--navy3:#1e3560;
+  --gold:#c9a84c;--goldl:#e0bf72;--goldd:rgba(201,168,76,.18);
+  --cream:#f8f5ef;--cream2:#f0ece3;--white:#fff;
+  --ink:#0c1220;--muted:#6b7a96;
+  --bd:rgba(201,168,76,.2);--bl:rgba(12,26,46,.12);
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'DM Sans',system-ui,sans-serif;
+}
+body{font-family:var(--sans);background:var(--white);color:var(--ink);overflow-x:hidden}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto 0;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:72px;transition:background .35s,box-shadow .35s}
+.nav.sc{background:rgba(12,26,46,.97);box-shadow:0 2px 20px rgba(0,0,0,.25);backdrop-filter:blur(14px)}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.nav-logo svg{height:44px;width:auto}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+.nav-links a{font-size:14px;font-weight:500;color:rgba(255,255,255,.75);text-decoration:none;letter-spacing:.3px;transition:color .2s}
+.nav-links a:hover{color:var(--goldl)}
+.nbtn{background:linear-gradient(135deg,var(--gold),var(--goldl));color:var(--navy)!important;font-weight:700!important;padding:9px 20px;border-radius:6px;font-size:13px;white-space:nowrap;transition:opacity .2s,transform .2s}
+.nbtn:hover{opacity:.88;transform:translateY(-1px)}
+.hbg{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+.hbg span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;transition:.3s}
+
+/* HERO */
+.hero{display:grid;grid-template-columns:55% 45%;min-height:100vh}
+.hero-l{background:var(--navy);padding:130px 6% 80px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.hero-l::before{content:'';position:absolute;top:-120px;right:-60px;width:350px;height:350px;border-radius:50%;border:80px solid rgba(201,168,76,.07);pointer-events:none}
+.hero-l::after{content:'';position:absolute;bottom:-80px;left:30px;width:180px;height:180px;border-radius:50%;background:rgba(201,168,76,.04);pointer-events:none}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:28px}
+.eyebrow-line{display:block;width:40px;height:2px;background:linear-gradient(90deg,var(--gold),transparent)}
+.eyebrow span{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold)}
+.hero h1{font-family:var(--serif);font-size:clamp(2.6rem,4.2vw,4rem);font-weight:600;line-height:1.12;color:var(--white);margin-bottom:24px}
+.hero h1 em{color:var(--goldl);font-style:italic}
+.hero-sub{font-size:1rem;color:rgba(255,255,255,.6);line-height:1.85;max-width:420px;margin-bottom:40px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:56px}
+.btng{background:linear-gradient(135deg,var(--gold),var(--goldl));color:var(--navy);padding:14px 26px;border-radius:7px;font-weight:700;font-size:14px;text-decoration:none;letter-spacing:.3px;transition:transform .2s,box-shadow .2s;display:inline-flex;align-items:center;gap:8px}
+.btng:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(201,168,76,.35)}
+.btnw{border:1.5px solid rgba(255,255,255,.2);color:rgba(255,255,255,.85);padding:14px 26px;border-radius:7px;font-weight:500;font-size:14px;text-decoration:none;transition:border-color .2s,color .2s;display:inline-flex;align-items:center;gap:8px}
+.btnw:hover{border-color:var(--gold);color:var(--goldl)}
+.hstats{display:flex;gap:0;border-top:1px solid rgba(255,255,255,.1);padding-top:36px}
+.hstat{flex:1;padding-right:24px;border-right:1px solid rgba(255,255,255,.08)}
+.hstat:last-child{border-right:none;padding-right:0;padding-left:24px}
+.hstat:first-child{padding-left:0}
+.hstat-n{font-family:var(--serif);font-size:2.6rem;font-weight:700;color:var(--goldl);line-height:1;display:block}
+.hstat-l{font-size:11.5px;color:rgba(255,255,255,.5);margin-top:5px;letter-spacing:.3px}
+.hero-r{background:var(--cream);position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center}
+.hero-r-accent{position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--gold),var(--goldl),var(--gold))}
+.founder-wrap{position:relative;z-index:2;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:flex-end}
+.founder-box{width:100%;height:100%;min-height:480px;position:relative;overflow:hidden;background:linear-gradient(160deg,#e8e3d8,#d8d0c0);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;color:var(--muted)}
+.founder-box img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+.founder-card{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);background:var(--navy);color:var(--white);padding:14px 24px;border-radius:10px;white-space:nowrap;box-shadow:0 8px 32px rgba(0,0,0,.2);border:1px solid var(--bd);z-index:10}
+.founder-card strong{display:block;font-size:15px;font-weight:600;font-family:var(--serif)}
+.founder-card span{font-size:11px;color:var(--goldl);letter-spacing:.8px;text-transform:uppercase}
+
+/* MARQUEE */
+.mqwrap{background:var(--navy2);border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);overflow:hidden;padding:14px 0;white-space:nowrap}
+.mqtrack{display:inline-flex;animation:mq 30s linear infinite}
+.mqtrack span{font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gold);padding:0 28px}
+.mqtrack span::after{content:'✦';margin-left:28px;font-size:8px}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* SECTIONS */
+.sl{background:var(--white)}.sc{background:var(--cream)}.sd{background:var(--navy)}
+section{padding:100px 5%}
+.inner{max-width:1160px;margin:0 auto}
+.slbl{display:inline-flex;align-items:center;gap:10px;margin-bottom:14px}
+.slbl-ln{width:32px;height:2px;background:var(--gold);display:block}
+.slbl span{font-size:11px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold)}
+.slbl.dk span{color:var(--goldl)}.slbl.dk .slbl-ln{background:var(--goldl)}
+h2.dp{font-family:var(--serif);font-size:clamp(2rem,3.2vw,3rem);font-weight:600;line-height:1.2}
+h2.dp.wh{color:var(--white)}
+h2.dp em{color:var(--gold);font-style:italic}
+h2.dp.wh em{color:var(--goldl)}
+.lead{font-size:1rem;color:var(--muted);line-height:1.85;max-width:520px}
+.lead.wh{color:rgba(255,255,255,.6)}
+
+/* ABOUT */
+.about-g{display:grid;grid-template-columns:52% 1fr;gap:72px;align-items:center}
+.about-ic{position:relative}
+.about-frame{border-radius:16px;overflow:hidden;border:1px solid var(--bl);aspect-ratio:4/5;background:var(--cream2);display:flex;align-items:center;justify-content:center}
+.about-frame img{width:100%;height:100%;object-fit:cover;object-position:top}
+.about-ph{width:100%;height:100%;min-height:360px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:var(--muted);font-size:13px;text-align:center;padding:20px}
+.gold-border{position:absolute;top:-12px;left:-12px;width:60%;height:60%;border:2px solid var(--gold);border-radius:12px;z-index:-1;opacity:.35}
+.cred-box{position:absolute;bottom:24px;right:-20px;background:var(--navy);color:var(--white);padding:18px 22px;border-radius:12px;border:1px solid var(--bd);box-shadow:0 10px 40px rgba(0,0,0,.18);text-align:center}
+.cred-n{font-family:var(--serif);font-size:2.4rem;font-weight:700;color:var(--goldl);display:block;line-height:1}
+.cred-l{font-size:11.5px;color:rgba(255,255,255,.6);margin-top:4px}
+.pq{font-family:var(--serif);font-size:1.35rem;font-weight:600;line-height:1.5;color:var(--navy);border-left:3px solid var(--gold);padding-left:20px;margin:28px 0;font-style:italic}
+.abody{font-size:.96rem;color:var(--muted);line-height:1.85;margin-bottom:28px}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px}
+.tag{font-size:12px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;padding:6px 14px;border-radius:100px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.25);color:var(--navy)}
+
+/* SERVICES */
+.svc-top{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:56px}
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--bl);border-radius:16px;overflow:hidden}
+.svc-item{padding:28px 32px;display:flex;gap:20px;align-items:flex-start;border-bottom:1px solid var(--bl);border-right:1px solid var(--bl);transition:background .25s;cursor:default}
+.svc-item:nth-child(even){border-right:none}
+.svc-item:nth-last-child(-n+2){border-bottom:none}
+.svc-item:hover{background:var(--cream)}
+.svc-n{font-family:var(--serif);font-size:1.5rem;font-weight:700;color:var(--gold);opacity:.6;line-height:1;flex-shrink:0;width:36px}
+.svc-c h3{font-family:var(--serif);font-size:1.1rem;font-weight:600;margin-bottom:8px}
+.svc-c p{font-size:13.5px;color:var(--muted);line-height:1.7}
+.svc-c .svc-tag{display:inline-block;margin-top:10px;font-size:10.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--gold)}
+.svc-cta{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;padding:28px 32px;background:var(--cream);border-bottom:none!important;border-right:none!important}
+.svc-cta p{font-size:14px;color:var(--muted);text-align:center}
+
+/* WHY */
+.why-g{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+.why-rows{display:flex;flex-direction:column}
+.why-item{display:flex;gap:20px;padding:28px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.why-item:first-child{padding-top:0}
+.why-item:last-child{border-bottom:none;padding-bottom:0}
+.why-n{font-family:var(--serif);font-size:3.5rem;font-weight:700;color:rgba(201,168,76,.18);line-height:1;flex-shrink:0;width:64px;letter-spacing:-2px}
+.why-txt h4{font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px}
+.why-txt p{font-size:14px;color:rgba(255,255,255,.55);line-height:1.75}
+.exp-box{background:rgba(255,255,255,.04);border:1px solid var(--bd);border-radius:20px;padding:40px;position:relative;overflow:hidden}
+.exp-box::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--goldl),transparent)}
+.exp-box h3{font-family:var(--serif);font-size:1.5rem;color:var(--white);margin-bottom:6px}
+.exp-box>p{font-size:14px;color:rgba(255,255,255,.5);margin-bottom:32px}
+.exp-rows{display:flex;flex-direction:column;gap:18px}
+.exp-row{display:flex;flex-direction:column;gap:7px}
+.exp-meta{display:flex;justify-content:space-between;font-size:13.5px;color:rgba(255,255,255,.7)}
+.exp-meta strong{color:var(--goldl);font-weight:700}
+.exp-track{height:5px;background:rgba(255,255,255,.07);border-radius:100px;overflow:hidden}
+.exp-fill{height:100%;border-radius:100px;background:linear-gradient(90deg,var(--gold),var(--goldl));width:0;transition:width 1.2s cubic-bezier(.4,0,.2,1)}
+
+/* KNOWLEDGE */
+.kc-layout{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;margin-top:52px}
+.kc-feat{background:var(--navy);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.kc-feat-top{height:180px;background:linear-gradient(135deg,var(--navy2),var(--navy3));display:flex;align-items:center;justify-content:center;font-size:60px}
+.kc-feat-body{padding:28px;flex:1;display:flex;flex-direction:column}
+.kc-feat-tag{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--goldl);margin-bottom:12px}
+.kc-feat-body h3{font-family:var(--serif);font-size:1.4rem;color:var(--white);margin-bottom:10px;line-height:1.3}
+.kc-feat-body p{font-size:13.5px;color:rgba(255,255,255,.5);line-height:1.7}
+.kc-foot{display:flex;justify-content:space-between;align-items:center;margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,.07)}
+&Z07)}
+.kc-date{font-size:12px;color:rgba(255,255,255,.4)}
+.kc-link{font-size:13px;color:var(--goldl);font-weight:600;text-decoration:none}
+.kc-link:hover{text-decoration:underline}
+.kc-side{display:flex;flex-direction:column;gap:18px}
+.kc-card{background:var(--white);border:1px solid var(--bl);border-radius:14px;padding:22px;transition:box-shadow .25s,transform .25s}
+.kc-card:hover{box-shadow:0 8px 32px rgba(0,0,0,.08);transform:translateY(-2px)}
+.kctag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;padding:4px 10px;border-radius:100px;margin-bottom:12px}
+.kctag.gst{background:rgba(201,168,76,.12);color:var(--gold)}
+.kctag.it{background:rgba(80,130,255,.1);color:#5082ff}
+.kctag.cs{background:rgba(50,200,120,.1);color:#32c878}
+.kc-card h4{font-family:var(--serif);font-size:1.05rem;line-height:1.35;margin-bottom:8px}
+.kc-card p{font-size:13px;color:var(--muted);line-height:1.7}
+.kc-cf{display:flex;justify-content:space-between;align-items:center;margin-top:14px}
+.kc-cdate{font-size:12px;color:var(--muted)}
+.kc-clink{font-size:12px;color:var(--gold);font-weight:600;text-decoration:none}
+
+/* CONTACT */
+#contact{padding:0}
+.ct-split{display:grid;grid-template-columns:1fr 1.2fr;min-height:600px}
+.ct-l{background:var(--navy2);padding:80px 6%;display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--bd)}
+.ct-l h2{font-family:var(--serif);font-size:2.4rem;color:var(--white);margin:20px 0 14px;line-height:1.2}
+.ct-l>p{font-size:14.5px;color:rgba(255,255,255,.55);line-height:1.85;margin-bottom:40px}
+.ct-infos{display:flex;flex-direction:column;gap:18px}
+.ct-info{display:flex;align-items:flex-start;gap:14px}
+.ct-ico{width:42px;height:42px;flex-shrink:0;border-radius:10px;background:var(--goldd);border:1px solid var(--bd);display:flex;align-items:center;justify-content:center;font-size:18px}
+.ct-lbl{font-size:10.5px;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,.4);margin-bottom:3px}
+.ct-val{font-size:14.5px;color:rgba(255,255,255,.85);font-weight:500}
+.ct-r{background:var(--navy);padding:80px 6%;display:flex;flex-direction:column;justify-content:center}
+.cf-ttl{font-family:var(--serif);font-size:1.6rem;color:var(--white);margin-bottom:28px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fg{display:flex;flex-direction:column;gap:7px;margin-bottom:16px}
+.fg label{font-size:11.5px;font-weight:600;color:rgba(255,255,255,.4);letter-spacing:.5px;text-transform:uppercase}
+.fg input,.fg textarea,.fg select{background:rgba(255,255,255,.05);border:1px solid var(--bd);color:var(--white);padding:12px 16px;border-radius:8px;font-size:14px;font-family:var(--sans);outline:none;transition:border-color .2s,background .2s}
+.fg input::placeholder,.fg textarea::placeholder{color:rgba(255,255,255,.25)}
+.fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--gold);background:rgba(201,168,76,.05)}
+.fg textarea{resize:vertical;min-height:100px}
+.fg select option{background:var(--navy2)}
+.subbtn{width:100%;background:linear-gradient(135deg,var(--gold),var(--goldl));color:var(--navy);border:none;padding:15px 28px;border-radius:8px;font-size:15px;font-weight:700;cursor:pointer;font-family:var(--sans);letter-spacing:.3px;transition:opacity .2s,transform .2s;margin-top:4px}
+.subbtn:hover{opacity:.88;transform:translateY(-1px)}
+
+/* FOOTER */
+footer{background:#080f1c;padding:60px 5% 28px}
+.ftg{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:44px;max-width:1160px;margin:0 auto;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.06)}
+.fb p{font-size:13.5px;color:rgba(255,255,255,.4);margin:14px 0 22px;line-height:1.85;max-width:280px}
+.fsocs{display:flex;gap:10px}
+.fsoc{width:36px;height:36px;border-radius:8px;border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:15px;transition:border-color .2s,background .2s}
+.fsoc:hover{border-color:var(--gold);background:var(--goldd)}
+.fc h4{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:rgba(255,255,255,.5);margin-bottom:18px}
+.fc ul{list-style:none;display:flex;flex-direction:column;gap:9px}
+.fc a{text-decoration:none;color:rgba(255,255,255,.45);font-size:14px;transition:color .2s}
+.fc a:hover{color:var(--goldl)}
+.fbtm{max-width:1160px;margin:0 auto;padding-top:24px;display:flex;justify-content:space-between;align-items:center}
+.fbtm p{font-size:12.5px;color:rgba(255,255,255,.3)}
+.fbtm span{color:var(--gold)}
+
+/* WHATSAPP */
+.wa{position:fixed;bottom:24px;right:24px;z-index:800;width:56px;height:56px;border-radius:50%;background:#25d366;box-shadow:0 6px 20px rgba(37,211,102,.4);display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:26px;transition:transform .2s,box-shadow .2s}
+.wa:hover{transform:scale(1.1);box-shadow:0 8px 28px rgba(37,211,102,.55)}
+.wa-tip{position:absolute;right:64px;white-space:nowrap;background:var(--navy);border:1px solid var(--bd);color:var(--white);padding:7px 14px;border-radius:8px;font-size:13px;font-weight:500;font-family:var(--sans);opacity:0;pointer-events:none;transition:opacity .2s}
+.wa:hover .wa-tip{opacity:1}
+
+/* ANIMATIONS */
+.rv{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}
+.rvl{opacity:0;transform:translateX(-30px);transition:opacity .7s ease,transform .7s ease}
+.rvr{opacity:0;transform:translateX(30px);transition:opacity .7s ease,transform .7s ease}
+.rv.up,.rvl.up,.rvr.up{opacity:1;transform:none}
+[data-d="1"]{transition-delay:.1s}[data-d="2"]{transition-delay:.2s}
+[data-d="3"]{transition-delay:.3s}[data-d="4"]{transition-delay:.4s}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .hero{grid-template-columns:1fr}
+  .hero-r{min-height:400px}
+  .about-g{grid-template-columns:1fr}
+  .cred-box{right:20px}
+  .why-g{grid-template-columns:1fr;gap:48px}
+  .kc-layout{grid-template-columns:1fr}
+  .ct-split{grid-template-columns:1fr}
+  .ftg{grid-template-columns:1fr 1fr}
+  .svc-grid{grid-template-columns:1fr}
+  .svc-item:nth-child(even){border-right:1px solid var(--bl)}
+  .svc-item:nth-last-child(-n+2){border-bottom:1px solid var(--bl)}
+  .svc-item:last-child{border-bottom:none}
+}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .hbg{display:flex}
+  .hero-l{padding:120px 6% 60px}
+  .hstats{flex-wrap:wrap;gap:20px}
+  .hstat{border-right:none!important;padding:0!important;min-width:40%}
+  .svc-top{flex-direction:column;gap:16px;align-items:flex-start}
+  .frow{grid-template-columns:1fr}
+  .ftg{grid-template-columns:1fr}
+  .fbtm{flex-direction:column;gap:8px;text-align:center}
+  .gold-border{display:none}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="mainNav">
+  <a href="#" class="nav-logo">
+    <svg viewBox="0 0 240 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Hexagon -->
+      <polygon points="28,2 51,15 51,41 28,54 5,41 5,15" fill="#0c1a2e" stroke="#c9a84c" stroke-width="1.8"/>
+      <polygon points="28,6 47,17 47,39 28,50 9,39 9,17" fill="none" stroke="#c9a84c" stroke-width=".7" opacity=".5"/>
+      <text x="28" y="35" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="17" fill="#c9a84c" letter-spacing="1">AA</text>
+      <!-- Gold vertical divider -->
+      <rect x="62" y="8" width="1.5" height="40" rx=".75" fill="#c9a84c"/>
+      <!-- Firm name -->
+      <text x="72" y="22" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="14" fill="#ffffff" letter-spacing=".5">AHMED</text>
+      <text x="72" y="37" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="14" fill="#ffffff" letter-spacing=".5">&amp; ASSOCIATES</text>
+      <!-- Tax Consultancy with dashes -->
+      <rect x="72" y="43" width="14" height="1.5" rx=".75" fill="#c9a84c"/>
+      <text x="90" y="48" font-family="Arial,sans-serif" font-size="8" font-weight="600" fill="#c9a84c" letter-spacing="2">TAX CONSULTANCY</text>
+      <rect x="210" y="43" width="14" height="1.5" rx=".75" fill="#c9a84c"/>
+    </svg>
+  </a>
+  <ul class="nav-links" id="navMenu">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#knowledge">Knowledge</a></li>
+    <li><a href="#contact" class="nbtn">Book Consultation</a></li>
+  </ul>
+  <button class="hbg" id="hbgBtn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-l">
+    <div class="eyebrow">
+      <span class="eyebrow-line"></span>
+      <span>CMA Firm &nbsp;·&nbsp; Raigarh, Chhattisgarh</span>
+    </div>
+    <h1>When Taxes Get<br>Complicated,<br><em>We Step In.</em></h1>
+    <p class="hero-sub">Expert GST &amp; Income Tax litigation, compliance, and advisory — protecting businesses across India from departmental notices to appellate tribunals.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btng">&#128197; Schedule a Consultation</a>
+      <a href="#services" class="btnw">Our Services &rarr;</a>
+    </div>
+    <div class="hstats">
+      <div class="hstat">
+        <span class="hstat-n" data-count="4">0</span>
+        <span class="hstat-l">+ Years in Practice</span>
+      </div>
+      <div class="hstat">
+        <span class="hstat-n" data-count="100">0</span>
+        <span class="hstat-l">+ Cases Handled</span>
+      </div>
+      <div class="hstat">
+        <span class="hstat-n">CMA</span>
+        <span class="hstat-l">Qualified Firm</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-r">
+    <div class="hero-r-accent"></div>
+    <div class="founder-wrap">
+      <div class="founder-box" id="founderBox">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" style="opacity:.25">
+          <circle cx="40" cy="26" r="18" fill="#0c1a2e"/>
+          <ellipse cx="40" cy="68" rx="28" ry="18" fill="#0c1a2e"/>
+        </svg>
+        <p style="color:#6b7a96;font-size:14px;font-weight:500;text-align:center">CMA Syed Sanan<br><small style="opacity:.6;font-size:12px">Add your photo here</small></p>
+      </div>
+      <div class="founder-card">
+        <strong>CMA Syed Sanan</strong>
+        <span>Founder &amp; Principal — Ahmed &amp; Associates</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="mqwrap">
+  <div class="mqtrack">
+    <span>GST Litigation</span><span>Income Tax Litigation</span><span>Show Cause Notices</span>
+    <span>GSTAT Representation</span><span>GST Compliance</span><span>IT Returns</span>
+    <span>Cost Audit</span><span>Management Audit</span><span>Outsourced Accounting</span>
+    <span>Tax Advisory</span><span>Notice Replies</span><span>Bookkeeping</span>
+    <span>GST Litigation</span><span>Income Tax Litigation</span><span>Show Cause Notices</span>
+    <span>GSTAT Representation</span><span>GST Compliance</span><span>IT Returns</span>
+    <span>Cost Audit</span><span>Management Audit</span><span>Outsourced Accounting</span>
+    <span>Tax Advisory</span><span>Notice Replies</span><span>Bookkeeping</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="sc">
+  <div class="inner">
+    <div class="about-g">
+      <div class="about-ic rvl">
+        <div class="gold-border"></div>
+        <div class="about-frame">
+          <div class="about-ph">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none"><circle cx="28" cy="18" r="13" fill="#c9a84c" opacity=".25"/><ellipse cx="28" cy="48" rx="20" ry="13" fill="#c9a84c" opacity=".15"/></svg>
+            <p>CMA Syed Sanan<br><small style="opacity:.6">Founder, Ahmed &amp; Associates</small></p>
+          </div>
+        </div>
+        <div class="cred-box">
+          <span class="cred-n">4+</span>
+          <span class="cred-l">Years in Active<br>CMA Practice</span>
+        </div>
+      </div>
+      <div class="rvr">
+        <div class="slbl"><span class="slbl-ln"></span><span>About the Firm</span></div>
+        <h2 class="dp" style="margin-bottom:0">Built on Expertise.<br><em>Driven by Results.</em></h2>
+        <blockquote class="pq">"We don't just file returns — we fight for your business at every stage of the tax process."</blockquote>
+        <p class="abody">Ahmed &amp; Associates is a professional consulting firm based in Raigarh, Chhattisgarh, led by <strong>CMA Syed Sanan</strong> — a qualified Cost and Management Accountant with a Certificate of Practice. With 4+ years of hands-on experience in GST and Income Tax litigation, compliance, audit, and outsourced finance, the firm delivers strategic, client-first solutions that protect businesses from complex tax challenges.</p>
+        <div class="tags">
+          <span class="tag">CMA Qualified</span>
+          <span class="tag">Certificate of Practice</span>
+          <span class="tag">GST Specialist</span>
+          <span class="tag">Tax Litigation</span>
+          <span class="tag">Cost Audit</span>
+        </div>
+        <a href="#contact" class="btng" style="width:fit-content">Get in Touch &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="sl">
+  <div class="inner">
+    <div class="svc-top rv">
+      <div>
+        <div class="slbl"><span class="slbl-ln"></span><span>What We Do</span></div>
+        <h2 class="dp">Our Services</h2>
+        <p class="lead">End-to-end tax, audit, and finance solutions — tailored to your business needs.</p>
+      </div>
+      <a href="#contact" class="btng" style="white-space:nowrap;align-self:flex-end">Enquire Now &rarr;</a>
+    </div>
+    <div class="svc-grid rv" data-d="2">
+      <div class="svc-item"><div class="svc-n">01</div><div class="svc-c"><h3>GST Litigation</h3><p>Expert representation in GST appeals, departmental proceedings, show cause notices, adjudication hearings, and GSTAT matters.</p><span class="svc-tag">Indirect Tax &rarr;</span></div></div>
+      <div class="svc-item"><div class="svc-n">02</div><div class="svc-c"><h3>Income Tax Litigation</h3><p>Strategic handling of IT appeals, scrutiny assessments, demand notices, and representation before CIT(A) and ITAT.</p><span class="svc-tag">Direct Tax &rarr;</span></div></div>
+      <div class="svc-item"><div class="svc-n">03</div><div class="svc-c"><h3>GST Compliance</h3><p>GST registration, GSTR-1, GSTR-3B, GSTR-9/9C annual returns, ITC reconciliation, and compliance advisory.</p><span class="svc-tag">Compliance &rarr;</span></div></div>
+      <div class="svc-item"><div class="svc-n">04</div><div class="svc-c"><h3>Income Tax Compliance</h3><p>ITR filing for individuals, firms, and companies. Tax planning, advance tax computation, TDS compliance, and Form 15CA/CB.</p><span class="svc-tag">Compliance &rarr;</span></div></div>
+      <div class="svc-item"><div class="svc-n">05</div><div class="svc-c"><h3>Notice Reply Drafting</h3><p>Professionally drafted, legally sound replies to GST and Income Tax notices, demand orders, and scrutiny communications.</p><span class="svc-tag">Litigation Support &rarr;</span></div></div>
+      <div class="svc-item"><div class="svc-n">06</div><div class="svc-c"><h3>Cost &amp; Management Audit</h3><p>Cost Audit under the Companies Act, Management Audit, and internal audit ensuring full regulatory compliance and accuracy.</p><span class="svc-tag">Audit &amp; Assurance &rarr;</span></div></div>
+      <div class="svc-item"><div class="svc-n">07</div><div class="svc-c"><h3>Accounting &amp; Bookkeeping</h3><p>End-to-end bookkeeping, Tally/ERP accounting, financial statements, MIS reporting, and payroll management.</p><span class="svc-tag">Accounting &rarr;</span></div></div>
+      <div class="svc-item"><div class="svc-n">08</div><div class="svc-c"><h3>Outsourced Accounting</h3><p>Cost-effective outsourced finance for Indian and international businesses — structured for quality, confidentiality, and timely delivery.</p><span class="svc-tag">Outsourcing &rarr;</span></div></div>
+      <div class="svc-item" style="border-bottom:none"><div class="svc-n">09</div><div class="svc-c"><h3>Tax Advisory</h3><p>Proactive GST and Income Tax advisory, transaction structuring, tax opinion letters, and strategic guidance to keep your business protected.</p><span class="svc-tag">Advisory &rarr;</span></div></div>
+      <div class="svc-cta"><p>Not sure which service you need?</p><a href="#contact" class="btng">Talk to Us &rarr;</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why" class="sd">
+  <div class="inner">
+    <div class="why-g">
+      <div class="rvl">
+        <div class="slbl dk"><span class="slbl-ln"></span><span>Why Choose Us</span></div>
+        <h2 class="dp wh" style="margin-bottom:20px">The Ahmed &amp; Associates<br><em>Advantage</em></h2>
+        <p class="lead wh" style="margin-bottom:44px">Deep technical expertise combined with a personal commitment to every client — because your tax battle is our battle.</p>
+        <div class="why-rows">
+          <div class="why-item"><div class="why-n">01</div><div class="why-txt"><h4>Litigation-First Mindset</h4><p>We specialize in tax disputes. From the first notice to the final appellate order — your case gets expert attention from day one.</p></div></div>
+          <div class="why-item"><div class="why-n">02</div><div class="why-txt"><h4>CMA Qualified Leadership</h4><p>Led by a Certified Cost &amp; Management Accountant — unmatched depth in cost audit, financial reporting, and strategic advisory.</p></div></div>
+          <div class="why-item"><div class="why-n">03</div><div class="why-txt"><h4>Transparency &amp; Education</h4><p>We explain every step in plain language. Tax updates, judgment analyses, and proactive communication at all times.</p></div></div>
+          <div class="why-item"><div class="why-n">04</div><div class="why-txt"><h4>Modern &amp; Tech-Driven</h4><p>Proficient with Tally, ERP systems, and AI-powered tools — delivering accurate, fast, and modern service delivery.</p></div></div>
+        </div>
+      </div>
+      <div class="rvr" data-d="2">
+        <div class="exp-box">
+          <h3>Core Expertise</h3>
+          <p>Rated by years of exposure and case volume.</p>
+          <div class="exp-rows">
+            <div class="exp-row"><div class="exp-meta"><span>GST Litigation</span><strong>95%</strong></div><div class="exp-track"><div class="exp-fill" data-w="95"></div></div></div>
+            <div class="exp-row"><div class="exp-meta"><span>GST Compliance</span><strong>92%</strong></div><div class="exp-track"><div class="exp-fill" data-w="92"></div></div></div>
+            <div class="exp-row"><div class="exp-meta"><span>Outsourced Accounting</span><strong>90%</strong></div><div class="exp-track"><div class="exp-fill" data-w="90"></div></div></div>
+            <div class="exp-row"><div class="exp-meta"><span>Income Tax Litigation</span><strong>88%</strong></div><div class="exp-track"><div class="exp-fill" data-w="88"></div></div></div>
+            <div class="exp-row"><div class="exp-meta"><span>Financial Reporting</span><strong>87%</strong></div><div class="exp-track"><div class="exp-fill" data-w="87"></div></div></div>
+            <div class="exp-row"><div class="exp-meta"><span>Cost Audit</span><strong>85%</strong></div><div class="exp-track"><div class="exp-fill" data-w="85"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KNOWLEDGE -->
+<section id="knowledge" class="sc">
+  <div class="inner">
+    <div class="rv" style="display:flex;justify-content:space-between;align-items:flex-end">
+      <div>
+        <div class="slbl"><span class="slbl-ln"></span><span>Knowledge Centre</span></div>
+        <h2 class="dp" style="margin-bottom:8px">Tax Updates &amp; <em>Insights</em></h2>
+        <p class="lead">Expert analyses, landmark judgments, and GST &amp; IT updates from our desk.</p>
+      </div>
+      <a href="#contact" class="btng" style="white-space:nowrap;align-self:flex-end">View All &rarr;</a>
+    </div>
+    <div class="kc-layout rv" data-d="2">
+      <div class="kc-feat">
+        <div class="kc-feat-top">📋</div>
+        <div class="kc-feat-body">
+          <div class="kc-feat-tag">&#9733; Featured &nbsp;·&nbsp; GST Update</div>
+          <h3>Key Changes in GSTR-9 Annual Return Filing for FY 2024-25</h3>
+          <p>A complete breakdown of the latest CBIC clarifications on GSTR-9 and GSTR-9C filing obligations, reconciliation requirements, common errors, and what businesses must do before the deadline.</p>
+          <div class="kc-foot"><span class="kc-date">July 2025</span><a href="#contact" class="kc-link">Read Full Analysis &rarr;</a></div>
+        </div>
+      </div>
+      <div class="kc-side">
+        <div class="kc-card"><span class="kctag it">Income Tax</span><h4>Section 148A Notices: How to Respond Effectively</h4><p>Timelines, grounds for objection, and how to protect your interests at the re-assessment hearing stage.</p><div class="kc-cf"><span class="kc-cdate">June 2025</span><a href="#contact" class="kc-clink">Read More &rarr;</a></div></div>
+        <div class="kc-card"><span class="kctag cs">Landmark Judgment</span><h4>ITC Reversal Under Rule 42 — Supreme Court's Latest Position</h4><p>Analysis of the SC ruling on ITC reversal proportionality — key implications for mixed-supply businesses.</p><div class="kc-cf"><span class="kc-cdate">May 2025</span><a href="#contact" class="kc-clink">Read More &rarr;</a></div></div>
+        <div class="kc-card"><span class="kctag gst">GST Update</span><h4>ITC Blocked Under Section 17(5): Common Mistakes to Avoid</h4><p>A practical guide to credits that can't be claimed and how businesses routinely overclaim — inviting demand notices.</p><div class="kc-cf"><span class="kc-cdate">April 2025</span><a href="#contact" class="kc-clink">Read More &rarr;</a></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="padding:0">
+  <div class="ct-split">
+    <div class="ct-l rvl">
+      <div class="slbl dk"><span class="slbl-ln" style="background:var(--goldl)"></span><span>Get in Touch</span></div>
+      <h2>Schedule Your<br>Consultation</h2>
+      <p>Facing a GST notice, Income Tax demand, or need compliance support? Our team responds within 24 hours. Office and online consultations both available.</p>
+      <div class="ct-infos">
+        <div class="ct-info"><div class="ct-ico">📧</div><div><div class="ct-lbl">Email</div><div class="ct-val">ahmedassociates28@gmail.com</div></div></div>
+        <div class="ct-info"><div class="ct-ico">📞</div><div><div class="ct-lbl">Phone / WhatsApp</div><div class="ct-val">+91 99374 71786</div></div></div>
+        <div class="ct-info"><div class="ct-ico">📍</div><div><div class="ct-lbl">Office Address</div><div class="ct-val">Shop No. 22-23, Krishna Complex<br>Dhimrapur Road, Raigarh, CG — 496001</div></div></div>
+        <div class="ct-info"><div class="ct-ico">🕐</div><div><div class="ct-lbl">Office Hours</div><div class="ct-val">Monday – Saturday &nbsp;|&nbsp; 10:00 AM – 7:00 PM</div></div></div>
+      </div>
+    </div>
+    <div class="ct-r rvr" data-d="2">
+      <div class="cf-ttl">Send Us a Message</div>
+      <div class="frow">
+        <div class="fg"><label>Full Name</label><input type="text" placeholder="Your full name"/></div>
+        <div class="fg"><label>Phone Number</label><input type="tel" placeholder="+91 XXXXX XXXXX"/></div>
+      </div>
+      <div class="fg"><label>Email Address</label><input type="email" placeholder="your@email.com"/></div>
+      <div class="fg"><label>Service Required</label>
+        <select>
+          <option value="">Select a service...</option>
+          <option>GST Litigation</option><option>Income Tax Litigation</option>
+          <option>Notice Reply Drafting</option><option>GST Compliance</option>
+          <option>Income Tax Compliance</option><option>Cost / Management Audit</option>
+          <option>Accounting &amp; Bookkeeping</option><option>Outsourced Accounting</option>
+          <option>Tax Advisory</option><option>Other</option>
+        </select>
+      </div>
+      <div class="fg"><label>Your Message</label><textarea placeholder="Briefly describe your matter or query..."></textarea></div>
+      <button class="subbtn" id="subBtn">Send Message &rarr;</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ftg">
+    <div class="fb">
+      <svg viewBox="0 0 240 56" height="44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="28,2 51,15 51,41 28,54 5,41 5,15" fill="#0c1a2e" stroke="#c9a84c" stroke-width="1.8"/>
+        <polygon points="28,6 47,17 47,39 28,50 9,39 9,17" fill="none" stroke="#c9a84c" stroke-width=".7" opacity=".5"/>
+        <text x="28" y="35" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="17" fill="#c9a84c" letter-spacing="1">AA</text>
+        <rect x="62" y="8" width="1.5" height="40" rx=".75" fill="#c9a84c"/>
+        <text x="72" y="22" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="14" fill="#ffffff" letter-spacing=".5">AHMED</text>
+        <text x="72" y="37" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="14" fill="#ffffff" letter-spacing=".5">&amp; ASSOCIATES</text>
+        <rect x="72" y="43" width="14" height="1.5" rx=".75" fill="#c9a84c"/>
+        <text x="90" y="48" font-family="Arial,sans-serif" font-size="8" font-weight="600" fill="#c9a84c" letter-spacing="2">TAX CONSULTANCY</text>
+        <rect x="210" y="43" width="14" height="1.5" rx=".75" fill="#c9a84c"/>
+      </svg>
+      <p>A professional CMA firm in Raigarh, Chhattisgarh, specializing in GST &amp; Income Tax litigation, compliance, cost audit, and outsourced finance. Trusted by businesses across India.</p>
+      <div class="fsocs">
+        <a href="#" class="fsoc" title="LinkedIn">💼</a>
+        <a href="https://wa.me/919937471786" class="fsoc" title="WhatsApp" target="_blank">💬</a>
+        <a href="#" class="fsoc" title="Instagram">📸</a>
+      </div>
+    </div>
+    <div class="fc"><h4>Services</h4><ul>
+      <li><a href="#services">GST Litigation</a></li>
+      <li><a href="#services">Income Tax Litigation</a></li>
+      <li><a href="#services">Notice Reply Drafting</a></li>
+      <li><a href="#services">GST Compliance</a></li>
+      <li><a href="#services">IT Compliance</a></li>
+      <li><a href="#services">Cost &amp; Mgmt Audit</a></li>
+      <li><a href="#services">Outsourced Accounting</a></li>
+    </ul></div>
+    <div class="fc"><h4>Firm</h4><ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#why">Why Choose Us</a></li>
+      <li><a href="#knowledge">Knowledge Centre</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact">Book Consultation</a></li>
+    </ul></div>
+    <div class="fc"><h4>Resources</h4><ul>
+      <li><a href="#knowledge">GST Updates</a></li>
+      <li><a href="#knowledge">IT Updates</a></li>
+      <li><a href="#knowledge">Landmark Judgments</a></li>
+      <li><a href="#knowledge">Due Date Calendar</a></li>
+      <li><a href="#knowledge">Tax Checklists</a></li>
+    </ul></div>
+  </div>
+  <div class="fbtm">
+    <p>&copy; 2025 Ahmed &amp; Associates &nbsp;·&nbsp; CMA Syed Sanan &nbsp;·&nbsp; Raigarh, CG &nbsp;·&nbsp; All Rights Reserved</p>
+    <p>Made with <span>&#9829;</span> for professional excellence</p>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/919937471786" target="_blank" class="wa" title="Chat on WhatsApp">
+  <span class="wa-tip">Chat on WhatsApp</span>
+  &#128172;
+</a>
+
+<script>
+// Nav scroll
+const nav=document.getElementById('mainNav');
+const onScroll=()=>nav.classList.toggle('sc',window.scrollY>40);
+window.addEventListener('scroll',onScroll,{passive:true});
+onScroll();
+
+// Hamburger
+const hbg=document.getElementById('hbgBtn');
+const menu=document.getElementById('navMenu');
+let open=false;
+hbg.addEventListener('click',()=>{
+  open=!open;
+  menu.style.cssText=open?'display:flex;flex-direction:column;position:fixed;top:72px;left:0;right:0;background:#0c1a2e;padding:24px 5%;gap:22px;border-bottom:1px solid rgba(201,168,76,.2);z-index:899':'';
+});
+
+// Reveal observer
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('up');
+      e.target.querySelectorAll('.exp-fill[data-w]').forEach(b=>b.style.width=b.dataset.w+'%');
+    }
+  });
+},{threshold:0.1});
+document.querySelectorAll('.rv,.rvl,.rvr').forEach(el=>obs.observe(el));
+
+// Standalone bar observer
+document.querySelectorAll('.exp-fill[data-w]').forEach(b=>{
+  new IntersectionObserver(([e])=>{if(e.isIntersecting){b.style.width=b.dataset.w+'%';}},{threshold:.3}).observe(b);
+});
+
+// Counter animation
+function animCount(el,target){
+  let c=0,step=Math.max(1,Math.ceil(target/50));
+  const t=setInterval(()=>{c=Math.min(c+step,target);el.textContent=c;if(c>=target)clearInterval(t);},40);
+}
+document.querySelectorAll('[data-count]').forEach(el=>{
+  new IntersectionObserver(([e])=>{if(e.isIntersecting)animCount(el,+el.dataset.count)},{threshold:.5}).observe(el);
+});
+
+// Nav active
+const secs=document.querySelectorAll('section[id]');
+const nls=document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll',()=>{
+  let cur='';
+  secs.forEach(s=>{if(window.scrollY>=s.offsetTop-90)cur=s.id;});
+  nls.forEach(a=>a.style.color=a.getAttribute('href')==='#'+cur?'var(--goldl)':'');
+},{passive:true});
+
+// Form submit
+document.getElementById('subBtn').addEventListener('click',function(){
+  this.textContent='Sending...';this.disabled=true;
+  setTimeout(()=>{
+    this.textContent='&#10003; Sent! We\'ll reply within 24 hrs.';
+    this.style.background='linear-gradient(135deg,#22c55e,#4ade80)';
+    setTimeout(()=>{this.textContent='Send Message →';this.style.background='';this.disabled=false;},4000);
+  },900);
+});
+</script>
+</body>
+</html>
